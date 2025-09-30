@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Newsletter — Últimas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Newsletter — Últimas</h1>
+    <p id="edition"></p>
+  </header>
+
+  <main id="grid" class="grid"></main>
+
+  <template id="card-tpl">
+    <article class="card">
+      <a class="thumb" target="_blank" rel="noopener">
+        <img alt="capa da notícia"/>
+      </a>
+      <div class="meta">
+        <span class="badge"></span>
+        <small class="source"></small>
+      </div>
+      <h3 class="title"></h3>
+      <p class="summary"></p>
+      <a class="readmore" target="_blank" rel="noopener">Ler matéria ↗</a>
+    </article>
+  </template>
+
+  <footer>
+    <small>Gerado a partir do <code>feed.json</code></small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
